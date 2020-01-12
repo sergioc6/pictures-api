@@ -29,6 +29,11 @@ Levantar los servicios de DB, node y adminer.
 $ docker-compose up -d
 ```
 
+Listo! Por defecto la API corre en el puerto 3000
+```sh
+$ localhost:3000
+```
+
 ### Endpoints
 
 | Metodo | Ruta | Descripción |
