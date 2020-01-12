@@ -1,11 +1,17 @@
 version: '3.1'
 
 services:
-
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile-node
+    ports:
+      - 3000:3000
+  
   db:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile-db
     ports:
         - 5432:5432
     environment:
